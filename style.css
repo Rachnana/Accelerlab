@@ -1,0 +1,20 @@
+
+body{
+    text-align: center;
+    text-emphasis-color: red;
+    background-color: rgb(228, 235, 102);
+}
+html{
+    scroll-behavior: smooth;
+}
+a:hover{
+    color: brown;
+    text-decoration:double;
+}
+a:active{
+    background-color: darkmagenta;
+}
+a:visited{
+    background-color: darkorange;
+    color: hotpink;
+}
