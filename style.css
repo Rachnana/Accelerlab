@@ -1,8 +1,9 @@
 
 body{
-    text-align: center;
+    /*text-align: center;*/
     text-emphasis-color: red;
-    background-color: rgb(228, 235, 102);
+    background-color: violet;
+    text-decoration: azure;
 }
 html{
     scroll-behavior: smooth;
@@ -17,4 +18,34 @@ a:active{
 a:visited{
     background-color: darkorange;
     color: hotpink;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+.demo {
+    font-size: 30px;
+    font-weight: bold;
+}
+.demo2 {
+    color: blue;
+}
+.demo3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+#Dummy {
+    color: rebeccapurple;
+    font-size: larger;
+    font-stretch: expanded;
+}
+form {
+    text-align: initial;
+}
+
+@media (max-height : 600px) {
+ body {
+    background-color: blueviolet;
+ }
 }
