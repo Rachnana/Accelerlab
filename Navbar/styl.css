@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    width: 65%;
+    margin: 6.5rem auto 0;
+}
+
+.tabs {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.tabs li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: gray;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabs li:hover {
+    color: black;
+}
+
+.tabs li::after {
+    content: " ";
+    position: absolute;
+    bottom: -20%;
+    left: -1%;
+    width: 0%;
+    height: 5px;
+    background: black;
+    border-radius: 30px;
+    transition: width 0.8s ease;
+}
+
+.tabs li.active::after {
+    width: 104%;
+}
+
+.container {
+    position: relative;
+}
+
+.content.active {
+    display: block;
+    animation: fade 1s ease;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+.content img {
+    width: 100%;
+}
+
+.content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    width: 100%;
+    margin: 1rem auto 0rem;
+    letter-spacing: 1px;
+    color: black;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    top {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    html {
+        font-size: 70%;
+    }
+    section {
+        width: 100%;
+    }
+}
