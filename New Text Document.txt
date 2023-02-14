@@ -1,0 +1,11 @@
+node -v
+npx create-react-app file_name
+cd file_name
+npm start  
+(to redirect to vscode code . )
+
+component must starts with Uppercase 
+
+
+
+git init
